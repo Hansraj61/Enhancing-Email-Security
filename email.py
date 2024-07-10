@@ -5,8 +5,8 @@ from sklearn.naive_bayes import MultinomialNB
 from sklearn.feature_extraction.text import CountVectorizer
 
 
-model = pickle.load(open(r"C:\Users\dell\model.pkl","rb"))
-with open(r"C:\Users\dell\model1.pkl","rb") as f:
+model = pickle.load(open("model.pkl","rb"))
+with open("model1.pkl","rb") as f:
     bow = pickle.load(f)
           
 st.header("EMAIL SPAM OR HAM")
@@ -27,7 +27,7 @@ if Email:
     if st.button('Submit'):
         if spam_ham == "spam":
             st.write("The email is:",  spam_ham)
-            st.image(r"C:\Users\dell\Desktop\spam-mail-19097451.webp",width=200)
+            st.image("spam-mail-19097451.webp",width=200)
         else:
             st.write("The email is:",  spam_ham)
 
