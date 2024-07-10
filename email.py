@@ -30,4 +30,5 @@ if Email:
             st.image("spam-mail-19097451.webp",width=200)
         else:
             st.write("The email is:",  spam_ham)
+            st.image("not-spam-2048x1075.jpg",width=200)
 
